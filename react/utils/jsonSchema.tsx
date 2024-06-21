@@ -158,16 +158,6 @@ export const JsonSchema = ({
     const productUrl = `${window.location.origin}/${parts[parts.length - 1]}`
 
     return <SkuName itemId={rowData.itemId} productUrl={productUrl} />
-    // (
-    //   <a
-    //     href={productUrl || ''}
-    //     className={styles.wishlistProductTexts}
-    //     target="_blank"
-    //     rel="noreferrer"
-    //   >
-    //     {cellData || rowData.skuName || ''}
-    //   </a>
-    // )
   }
 
   const jsonschema = {

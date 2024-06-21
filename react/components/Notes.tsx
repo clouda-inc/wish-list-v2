@@ -32,7 +32,8 @@ const Notes = ({
 
   useEffect(() => {
     wishlistRef.current = initialWishlist
-  }, [initialWishlist])
+    setNotes(currentNotes)
+  }, [initialWishlist, currentNotes])
 
   const handleNotesSubmit = async () => {
     try {
